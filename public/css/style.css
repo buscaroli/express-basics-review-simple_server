@@ -25,6 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  align-items: center;
 }
 
 main,
@@ -32,6 +33,7 @@ main,
 .about,
 .notfound {
   flex-grow: 1;
+  width: 80%;
 }
 
 h1 {
@@ -63,13 +65,14 @@ a {
 .navbar {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2rem;
-  
+  align-self: flex-start;
+  margin-left: 15%;
 }
 
 .navbar--list {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  
 }
 
 .navbar--list--item {
