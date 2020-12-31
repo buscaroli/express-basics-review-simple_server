@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* will be inherited so entering it in the body */
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px as 10/16*100 = 16px which is the std value for 1rem*/
+}
+
+body {
+  box-sizing: border-box; /* will be inherited, see under the '*' */
+  padding: 3rem;
+  font-family:'Courier New', Courier, monospace;
+  color: #444444;
+  background-color: rgb(165, 178, 192);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main,
+.index,
+.about,
+.notfound {
+  flex-grow: 1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+main ul li {
+  margin-left: 3rem;
+  list-style: circle;
+}
+
+a {
+  text-decoration: none;
+  color: darkslateblue;
+}
+
+.navbar {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  
+}
+
+.navbar--list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.navbar--list--item {
+  margin-right: 1rem;
+}
+
+.footer {
+  text-align: center;
+  color: darkslateblue;
+}

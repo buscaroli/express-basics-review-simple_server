@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/style.css" rel="stylesheet">
+  <title>{{ title }}</title>
+</head>
+<body>
+  <div class='container'>
+  {{>header}}
+    <main class='index'>
+      <h1>About this App</h1>
+      <h2>Reviewing the basics of Express</h2>
+      <p>
+        I am quickly reviewing the basics of Express.
+      </p>
+      <p>
+        I have set up a basic app to render a couple of pages:
+        <ul>
+          <li>Homepage: just some rubbish text, but better than the usual lorem...</li>
+          <li>AboutPage, really the same as above</li>
+          <li>Data Page, just serving some data in an hardcoded json object</li>
+        </ul>
+      </p>
+      <p>
+        For this quick project I have used:
+        <ul>
+          <li>Handlebars, as the templating engine</li>
+          <li>Babel, to transpile ES6</li>
+          <li>Nodemon, to restart the development server at every update.
+            <ul>
+              <li>Installed as a dev dependency</li>
+              <li>Set up to watch js, hbs and css files</li>
+            </ul>
+          </li>
+        </ul>
+      </p>
+      <p>
+        The next step will be to review MongoDb and Mongoose, still undecided whether to build on top of this app ot to start one afresh.
+      </p>
+    </main>
+  </div>
+  {{>footer}}
+</body>
+</html>
